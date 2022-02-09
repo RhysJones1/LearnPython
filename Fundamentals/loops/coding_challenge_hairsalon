@@ -1,0 +1,44 @@
+# You are the Data Analyst at Carly’s Clippers, the newest hair salon on the block. Your job is to go through the lists of data that have been collected in the past couple of weeks. You will be calculating some important metrics that Carly can use to plan out the operation of the business for the rest of the month.
+
+# Set initial variables
+hairstyles = ["bouffant", "pixie", "dreadlocks", "crew", "bowl", "bob", "mohawk", "flattop"]
+
+prices = [30, 25, 40, 20, 20, 35, 50, 35]
+
+last_week = [2, 3, 5, 8, 4, 4, 6, 2]
+
+# set variable total_price and calculate total price
+total_price = 0
+for price in prices:
+  total_price += price
+print(total_price)
+
+# find average price
+average_price = total_price/len(prices)
+print("Average Haircut Price: £{0}".format(round(average_price,2)))
+
+# owner wants to reduce her prices by £5. Use list comprehension to reduce each price by £5
+
+new_prices = [price - 5 for price in prices]
+print(new_prices)
+
+# calculate revenue using prices and last week variable
+total_revenue = 0
+for i in range(len(hairstyles)):
+  total_revenue += prices[i] * last_week[i]
+print("Total Revenue is £", total_revenue)
+
+# calculate the average daily revenue
+average_daily_revenue = total_revenue / 7
+print("The average daily revenue is £", average_daily_revenue)
+
+# create an additional list that one includes haircuts under £30
+
+cuts_under_30 = [hairstyles[i] for i in range(len(prices)) if new_prices[i] < 30]
+print(cuts_under_30)
+
+
+
+
+
+

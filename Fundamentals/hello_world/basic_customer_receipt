@@ -1,0 +1,56 @@
+# Build a basic receipt system for customers.
+# store names and prices of a furniture store’s catalog in variables and
+# then process the total price and item list of customers, printing them to the output terminal.
+
+rustic_seat_description = """Rustic seat Tufted polyester blend on wood.
+32 inches high x 40 inches wide x 30 inches deep.
+Red or white."""
+
+# add price within a variable
+rustic_seat_price = 254.00
+# add another piece of furniture
+rustic_settee_description = """Rustic Settee. Faux leather on birch.
+29.50 inches high x 54.75 inches wide x 28 inches deep.
+
+Black."""
+# add a price
+rustic_settee_price = 180.50
+
+# add another item
+rustic_lamp_description = """Rustic Lamp. Glass and iron.
+36 inches tall.
+Brown with cream shade."""
+
+# add price
+rustic_lamp_price = 52.15
+# Add VAT
+uk_vat = .20
+# set a variable to keep a tally of what the customer is purchasing
+customer_one_total = 0
+# set a variable that keeps a list of descriptions of the customer's purchases
+customer_one_itemisation = ""
+# customer has decided on purchasing a seat
+customer_one_total += rustic_seat_price
+# add some description to the customers transactions
+customer_one_itemisation += rustic_seat_description
+# customer has added a lamp to their order
+customer_one_total += rustic_lamp_price
+
+customer_one_itemisation += rustic_lamp_description
+# calculate vat
+customer_one_tax = customer_one_total * uk_vat
+# add vat to the total price
+customer_one_total += customer_one_tax
+# design and print the receipt
+
+print("Rustic Furniture Store")
+print("Customer One Items:")
+print("")
+print(customer_one_itemisation)
+print("")
+print("Customer One Total:")
+print("£",customer_one_total,"inc VAT")
+print("")
+print("Thanks for shopping at the Rustic furniture Store!!!")
+print("")
+print("Our returns policy is 30days with proof of purchase")

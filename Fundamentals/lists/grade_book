@@ -1,0 +1,38 @@
+#You are a student and you are trying to organize your subjects and grades using Python.
+#grades from last year
+last_semester_gradebook = [["politics", 80], ["latin", 96], ["dance", 97], ["architecture", 65]]
+
+#grades from this year 
+subjects = ["physics" ,"calculus", "poetry", "history"]
+grades = [98, 97, 85, 88]
+
+# 2 dimensional list
+gradebook = [["physics", 98], ["calculus", 97], ["poetry", 85], ["history", 88]]
+
+#print to check
+print(gradebook)
+
+#add additional grades using .append
+gradebook.append(["Computer science", 100])
+gradebook.append(["visual arts", 93])
+print(gradebook)
+
+#make an amendment to a grade
+gradebook[-1][-1] = 98
+print(gradebook)
+
+#remove the grade from poetry
+gradebook[2].remove(85)
+print(gradebook)
+
+#add a pass grade to poetry instead of a numerical grade
+gradebook[2].append("pass")
+print(gradebook)
+
+#combine both lists to create a full gradebook
+full_gradebook = last_semester_gradebook + gradebook
+
+print(full_gradebook)
+
+
+

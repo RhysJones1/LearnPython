@@ -1,0 +1,9 @@
+#ASCII Art Project
+print("   RRR         JJJJJJJJJJ  ")
+print("   R   R            J      ")
+print("   R     R          J      ")
+print("   R     R          J      ")
+print("   R   R            J      ")
+print("   R  R             J      ")
+print("   R   R           J       ")
+print("   R     R   JJJJJJ       ")  

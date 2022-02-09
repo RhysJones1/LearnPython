@@ -1,0 +1,9 @@
+# create a basic countdown from 10-0 using a while loop
+# set countdown variable to 10
+countdown = 10
+
+#set while statement ensuring the countdown is reduced by 1 after everyloop
+while countdown >= 0:
+  print(countdown)
+  countdown += -1
+print("We have liftoff!")
